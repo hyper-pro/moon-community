@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="S3AB8-Kca20xLDcKXuQ4O872mz1jCr_zzSFnPYCndHw" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOON COMMUNITY SMP &bull; Infinite Adventures</title>
+
+  <!-- Primary SEO Meta Tags -->
+  <meta name="title" content="MOON COMMUNITY SMP | One Community &bull; Infinite Adventures" />
+  <meta name="description"
+    content="Enter the Moon Realm on MOON COMMUNITY SMP. A premier Minecraft Survival Multiplayer server featuring custom crystal progression, shard upgrades, fair gameplay, and an active gaming community. Join at mooncommunity.mcsh.io." />
+  <meta name="keywords"
+    content="moon community smp, minecraft smp, moon realm minecraft, minecraft survival multiplayer, mooncommunity.mcsh.io, minecraft java smp, best minecraft smp 2026, premium minecraft server" />
+  <meta name="author" content="MOON COMMUNITY" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#9333ea" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MOON COMMUNITY SMP | One Community &bull; Infinite Adventures" />
+  <meta property="og:description"
+    content="Enter the Moon Realm on MOON COMMUNITY SMP. Premium Minecraft Survival Multiplayer with custom crystal progression, fair play, and an engaged player base. Server IP: mooncommunity.mcsh.io" />
+  <meta property="og:image" content="icon.png" />
+  <meta property="og:site_name" content="MOON COMMUNITY SMP" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="MOON COMMUNITY SMP | One Community &bull; Infinite Adventures" />
+  <meta property="twitter:description"
+    content="Enter the Moon Realm on MOON COMMUNITY SMP. Server IP: mooncommunity.mcsh.io" />
+  <meta property="twitter:image" content="icon.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- Google Fonts: Oxanium, Space Grotesk, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oxanium:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data for Gaming Community -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGameSeries",
+    "name": "MOON COMMUNITY SMP",
+    "description": "A premier Minecraft Survival Multiplayer (SMP) server featuring cosmic crystal progression, fair community gameplay, and infinite adventures.",
+    "url": "https://mooncommunity.mcsh.io/",
+    "image": "icon.png",
+    "genre": ["Survival", "Multiplayer", "Sandbox", "Adventure"],
+    "gamePlatform": "PC",
+    "playMode": "MultiPlayer",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MOON COMMUNITY",
+      "url": "https://discord.gg/WbygPDuFqm",
+      "logo": "icon.png"
+    }
+  }
+  </script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Dynamic Cosmic Canvas Background -->
+  <canvas id="voxel-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="MOON COMMUNITY SMP Home">
+        <div class="nav-brand-logo">
+          <img src="icon.png" alt="MOON COMMUNITY Logo" />
+        </div>
+        <div>
+          <div class="nav-brand-title">
+            MOON COMMUNITY <span class="nav-tag-smp">SMP</span>
+          </div>
+          <div class="nav-brand-sub">Infinite Adventures</div>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rules">SMP Rules</a></li>
+        <li><a href="#how-to-join">How to Join</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="https://discord.gg/a5FrYzFpQc" target="_blank" rel="noopener noreferrer" class="nav-store-btn"
+          aria-label="Visit official Store on Discord">
+          🛍️ STORE
+        </a>
+        <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer"
+          class="minecraft-btn-primary nav-discord-btn" aria-label="Join Discord Community">
+          💬 DISCORD
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true">
+    <div>
+      <div
+        style="padding:1rem; border-radius:1rem; background:rgba(20,16,43,0.6); border:1px solid rgba(168,85,247,0.3); margin-bottom:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div style="font-family:var(--font-mono); font-size:0.65rem; color:#c084fc; text-transform:uppercase;">Java
+            Server IP</div>
+          <div style="font-family:var(--font-mono); font-weight:700; color:#ffffff; font-size:0.95rem;">
+            mooncommunity.mcsh.io</div>
+        </div>
+        <button type="button" class="minecraft-btn-primary btn-copy"
+          style="padding:0.4rem 0.85rem; font-size:0.75rem; min-height:unset;">
+          COPY
+        </button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="#home"><span>Home</span> <span>→</span></a></li>
+        <li><a href="#features"><span>Features</span> <span>→</span></a></li>
+        <li><a href="#about"><span>About the Realm</span> <span>→</span></a></li>
+        <li><a href="#rules"><span>SMP Rules</span> <span>→</span></a></li>
+        <li><a href="#how-to-join"><span>How to Join</span> <span>→</span></a></li>
+      </ul>
+    </div>
+
+    <div
+      style="display:flex; flex-direction:column; gap:0.75rem; padding-top:1.5rem; border-top:1px solid rgba(168,85,247,0.2);">
+      <a href="https://discord.gg/a5FrYzFpQc" target="_blank" rel="noopener noreferrer" class="nav-store-btn"
+        style="text-align:center; justify-content:center; padding:0.85rem;">
+        🛍️ VISIT STORE (DISCORD)
+      </a>
+      <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer" class="minecraft-btn-primary"
+        style="text-align:center; width:100%;">
+        💬 JOIN DISCORD COMMUNITY
+      </a>
+      <div
+        style="text-align:center; font-family:var(--font-mono); font-size:0.7rem; color:rgba(216,180,254,0.6); margin-top:0.25rem;">
+        One Community • Infinite Adventures
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="badge-pill" style="margin-bottom:1.5rem;">
+          <span>✨</span>
+          <span>Official Minecraft Java SMP</span>
+          <span>•</span>
+          <span style="opacity:0.8;">24/7 Dedicated Server</span>
+        </div>
+
+        <div class="hero-logo-wrapper">
+          <div class="hero-logo-glow"></div>
+          <div class="hero-logo-box">
+            <img src="icon.png" alt="MOON COMMUNITY Server Logo" />
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          MOON COMMUNITY <span class="gradient-text-purple glow-text-purple">SMP</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Your adventure. Your empire. Your community.
+        </p>
+
+        <p class="hero-motto">
+          One Community • Infinite Adventures
+        </p>
+
+        <!-- Prominent Server IP Card -->
+        <div class="ip-card-container">
+          <div class="crystal-card ip-card">
+            <div class="ip-card-left">
+              <div class="ip-icon-box">🎮</div>
+              <div>
+                <div class="ip-label">Java Server Address</div>
+                <div class="ip-value">mooncommunity.mcsh.io</div>
+              </div>
+            </div>
+            <button type="button" class="minecraft-btn-primary btn-copy" aria-label="Copy server IP address">
+              📋 COPY IP
+            </button>
+          </div>
+        </div>
+
+        <!-- Primary Action Buttons -->
+        <div class="hero-actions">
+          <a href="#how-to-join" class="minecraft-btn-primary">
+            <span>PLAY NOW</span>
+            <span>➔</span>
+          </a>
+          <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer"
+            class="minecraft-btn-secondary" aria-label="Join official MOON COMMUNITY Discord">
+            <span>JOIN DISCORD</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURES SECTION -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill" style="margin-bottom:1rem;">
+            <span>⚡</span>
+            <span>Realm Mechanics & Features</span>
+          </div>
+          <h2 class="section-title">
+            FORGED FOR <span class="gradient-text-purple">ENDLESS ADVENTURE</span>
+          </h2>
+          <p class="section-desc">
+            Every feature on MOON COMMUNITY SMP is meticulously crafted to elevate vanilla gameplay while honoring fair
+            competition, deep progression, and true camaraderie.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Survival Multiplayer -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">🧭</div>
+              <div class="feature-tagline">Pure Multiplayer Essence</div>
+              <h3 class="feature-title">Survival Multiplayer (SMP)</h3>
+              <p class="feature-desc">
+                Immerse yourself in an authentic Minecraft survival experience elevated by custom space and moon lore.
+                Forge alliances, build towering bases, and explore boundless frontiers.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 01</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Feature 2: Community Adventures -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">⚔️</div>
+              <div class="feature-tagline">Explore Together</div>
+              <h3 class="feature-title">Community Adventures</h3>
+              <p class="feature-desc">
+                Journey through challenging terrains and collaborative expeditions with fellow players. Build collective
+                monuments and conquer dangerous uncharted realms as one unified community.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 02</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Feature 3: Player Progression & Shard Upgrades -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">🔮</div>
+              <div class="feature-tagline">Cosmic Power Growth</div>
+              <h3 class="feature-title">Player Progression & Shard Upgrades</h3>
+              <p class="feature-desc">
+                Unlock mystical crystal shards through dedicated gameplay and exploration. Channel celestial energies to
+                enhance your abilities, empower gear, and advance your empire.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 03</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Feature 4: Fair Gameplay & Server Rules -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">🛡️</div>
+              <div class="feature-tagline">Equal Ground For All</div>
+              <h3 class="feature-title">Fair Gameplay & Server Rules</h3>
+              <p class="feature-desc">
+                Strict anti-cheat enforcement, anti-grief protections, and dedicated moderation ensure a level playing
+                field where skill, creativity, and teamwork define your success.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 04</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Feature 5: Community Events & Interaction -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">🎉</div>
+              <div class="feature-tagline">Dynamic Gatherings</div>
+              <h3 class="feature-title">Community Events & Interaction</h3>
+              <p class="feature-desc">
+                Participate in regular server-wide events, community build projects, and interactive gatherings
+                organized to bring players together and create unforgettable memories.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 05</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Feature 6: Always-Online Server Experience -->
+          <div class="crystal-card feature-box">
+            <div>
+              <div class="feature-icon-wrapper">🌐</div>
+              <div class="feature-tagline">Dependable Performance</div>
+              <h3 class="feature-title">Always-Online Server Experience</h3>
+              <p class="feature-desc">
+                Engineered for maximum uptime and smooth performance with enterprise-grade hosting infrastructure, low
+                latency, and rapid automated failover so the realm never sleeps.
+              </p>
+            </div>
+            <div class="feature-footer">
+              <span>MOON SMP // 06</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="section" style="border-top:1px solid rgba(168,85,247,0.15);">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <div class="badge-pill" style="margin-bottom:1rem;">
+              <span>🌙</span>
+              <span>Identity & Philosophy</span>
+            </div>
+            <h2 class="section-title" style="text-align:left;">
+              A CELESTIAL REALM BUILT FOR <span class="gradient-text-purple">TRUE SURVIVORS</span>
+            </h2>
+            <p style="color:var(--text-muted); font-size:1.05rem; margin-bottom:1rem;">
+              <strong style="color:#ffffff;">MOON COMMUNITY SMP</strong> was founded on a simple yet unyielding
+              philosophy: that Minecraft is at its greatest when shared with an engaged, respectful, and ambitious
+              community.
+            </p>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7;">
+              Infused with celestial atmosphere, glowing purple crystals, and mysterious moon relics, our SMP offers a
+              home where every builder, explorer, and conqueror can leave a lasting legacy. Whether you are building
+              solitary monuments under the starry firmament or orchestrating vast community settlements, you are part of
+              a shared saga.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-title">👥 One Community</div>
+                <div class="pillar-desc">A welcoming, mature space where every player is valued, respected, and heard.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-title">🔮 Infinite Adventures</div>
+                <div class="pillar-desc">Custom crystal shard progression designed to reward perseverance and skill.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-title">🛡️ Unwavering Integrity</div>
+                <div class="pillar-desc">Zero tolerance for cheating, exploiting, griefing, or unfair advantage abuse.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-title">🤝 Community First</div>
+                <div class="pillar-desc">Staff members dedicated to fair guidance, responsive support, and community
+                  joy.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Identity Card -->
+          <div>
+            <div class="crystal-card" style="padding:2.5rem; text-align:center;">
+              <div
+                style="width:90px; height:90px; margin:0 auto 1.5rem; border-radius:1rem; overflow:hidden; border:2px solid var(--purple-light); box-shadow:0 0 25px rgba(168,85,247,0.4);">
+                <img src="icon.png" alt="Server Seal" style="width:100%; height:100%; object-fit:cover;" />
+              </div>
+              <div
+                style="font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; color:var(--purple-light); margin-bottom:0.35rem;">
+                Server Motto
+              </div>
+              <blockquote
+                style="font-family:var(--font-display); font-size:1.35rem; font-weight:700; color:#ffffff; margin-bottom:1.5rem;">
+                “One Community • Infinite Adventures”
+              </blockquote>
+              <div style="height:1px; background:rgba(168,85,247,0.2); margin-bottom:1.5rem;"></div>
+              <div
+                style="font-family:var(--font-mono); font-size:0.8rem; text-align:left; display:flex; flex-direction:column; gap:0.65rem;">
+                <div
+                  style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(168,85,247,0.1); padding-bottom:0.4rem;">
+                  <span style="color:var(--purple-light);">Server Type:</span>
+                  <span style="color:#ffffff;">Minecraft Java SMP</span>
+                </div>
+                <div
+                  style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(168,85,247,0.1); padding-bottom:0.4rem;">
+                  <span style="color:var(--purple-light);">Server IP:</span>
+                  <span style="color:#ffffff;">mooncommunity.mcsh.io</span>
+                </div>
+                <div
+                  style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(168,85,247,0.1); padding-bottom:0.4rem;">
+                  <span style="color:var(--purple-light);">Primary Theme:</span>
+                  <span style="color:#ffffff;">Cosmic Moon & Crystals</span>
+                </div>
+                <div style="display:flex; justify-content:space-between;">
+                  <span style="color:var(--purple-light);">Atmosphere:</span>
+                  <span style="color:#ffffff;">Competitive & Fair</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY PLAY WITH US SECTION -->
+    <section class="section"
+      style="background:rgba(9,8,20,0.6); border-top:1px solid rgba(168,85,247,0.15); border-bottom:1px solid rgba(168,85,247,0.15);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill" style="margin-bottom:1rem;">
+            <span>💎</span>
+            <span>The Player Standard</span>
+          </div>
+          <h2 class="section-title">
+            WHY PLAY ON <span class="gradient-text-purple">MOON COMMUNITY?</span>
+          </h2>
+          <p class="section-desc">
+            We don’t believe in false promises or gimmicks. Here is what you can genuinely count on every time you log
+            into our server.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              🏆 Real Vanilla SMP Spirit
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              No confusing mini-game hubs or bloated bloatware. Pure, focused Minecraft survival multiplayer where
+              player ingenuity takes center stage.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              🔮 Meaningful Crystal Progression
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              Our shard upgrade system gives dedicated explorers and survivors long-term aspirations without breaking
+              vanilla balance.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              🛡️ Zero Tolerance For Cheating
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              Active moderation and robust detection ensure hacked clients, dupes, and griefers are swiftly neutralized
+              so your builds stay safe.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              ❤️ Welcoming & Mature Community
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              A server environment where players treat each other with dignity. Find helpful allies, trade honestly, and
+              celebrate shared milestones.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              ⚡ High-Performance Infrastructure
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              Hosted on top-tier dedicated hardware with high tick-rate stability (20 TPS target) and low latency across
+              global connection routes.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3
+              style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">
+              🎉 Dedicated Community Events
+            </h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">
+              Regular server gatherings, group expeditions, and challenges keep the realm bustling with camaraderie and
+              excitement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SMP RULES SECTION -->
+    <section id="rules" class="section">
+      <div class="container-narrow">
+        <div class="section-header">
+          <div class="badge-pill" style="margin-bottom:1rem;">
+            <span>📜</span>
+            <span>Server Codex & Enforcement</span>
+          </div>
+          <h2 class="section-title">
+            SMP SERVER <span class="gradient-text-purple">RULES</span>
+          </h2>
+          <p class="section-desc">
+            To preserve a thriving, competitive, and welcoming realm, all players joining MOON COMMUNITY SMP are
+            required to uphold these 15 core tenets.
+          </p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="crystal-card rules-filter-bar">
+          <div class="rules-tabs">
+            <button type="button" class="rules-tab-btn active" data-cat="All">All</button>
+            <button type="button" class="rules-tab-btn" data-cat="Community Conduct">Community Conduct</button>
+            <button type="button" class="rules-tab-btn" data-cat="Fair Play & Cheating">Fair Play & Cheating</button>
+            <button type="button" class="rules-tab-btn" data-cat="Game Integrity">Game Integrity</button>
+            <button type="button" class="rules-tab-btn" data-cat="Security & Reporting">Security & Reporting</button>
+          </div>
+
+          <div class="rules-search-box">
+            <input type="text" id="rules-search-input" class="rules-search-input" placeholder="🔍 Search rules..." />
+          </div>
+        </div>
+
+        <!-- Dynamic Accordion List -->
+        <div id="rules-list-container" class="rules-list"></div>
+
+        <!-- Ticket Support Notice -->
+        <div class="crystal-card"
+          style="margin-top:2.5rem; padding:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <div style="font-weight:700; color:#ffffff; font-size:0.95rem; margin-bottom:0.25rem;">
+              Need to report a rule breaker?
+            </div>
+            <div style="font-size:0.85rem; color:var(--text-muted);">
+              Staff respond to tickets opened on our official Discord server. Keep evidence ready.
+            </div>
+          </div>
+          <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer"
+            class="minecraft-btn-primary" style="padding:0.6rem 1.25rem; font-size:0.8rem; min-height:unset;">
+            OPEN A TICKET
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HOW TO JOIN SECTION -->
+    <section id="how-to-join" class="section" style="border-top:1px solid rgba(168,85,247,0.15);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill" style="margin-bottom:1rem;">
+            <span>🚀</span>
+            <span>Connection Portal</span>
+          </div>
+          <h2 class="section-title">
+            JOIN THE <span class="gradient-text-purple">ADVENTURE</span>
+          </h2>
+          <p class="section-desc">
+            Ready to set foot into the Moon Realm? Follow this 3-step guide to connect to our Java SMP server in under a
+            minute.
+          </p>
+        </div>
+
+        <!-- Connection Hero Card -->
+        <div class="container-narrow">
+          <div class="crystal-card"
+            style="padding:2rem; border:2px solid rgba(168,85,247,0.4); box-shadow:0 15px 40px rgba(0,0,0,0.6);">
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1.25rem;">
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <div
+                  style="width:52px; height:52px; border-radius:0.75rem; border:1px solid var(--purple-light); padding:2px; overflow:hidden;">
+                  <img src="icon.png" alt="Server Icon"
+                    style="width:100%; height:100%; object-fit:cover; border-radius:0.6rem;" />
+                </div>
+                <div>
+                  <div
+                    style="font-family:var(--font-mono); font-size:0.75rem; color:var(--purple-light); text-transform:uppercase;">
+                    Official Minecraft Java Address
+                  </div>
+                  <div
+                    style="font-family:var(--font-mono); font-size:1.35rem; font-weight:700; color:#ffffff; user-select:all;">
+                    mooncommunity.mcsh.io
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="minecraft-btn-primary btn-copy" style="padding:0.75rem 1.5rem;"
+                aria-label="Copy server IP">
+                📋 COPY SERVER IP
+              </button>
+            </div>
+
+            <!-- Live Status Badge -->
+            <div id="server-status-badge" class="status-badge">
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <span class="status-dot"></span>
+                <span>Pinging mooncommunity.mcsh.io...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Step Guides -->
+        <div class="join-steps-grid">
+          <div class="step-card">
+            <div>
+              <div class="step-num">01</div>
+              <h3 class="step-title">Launch Minecraft Java</h3>
+              <p class="step-desc">
+                Open your official Minecraft Launcher and start Minecraft Java Edition with a compatible release
+                version.
+              </p>
+            </div>
+            <div class="step-tip">
+              💡 Requires Minecraft Java Edition for PC/Mac/Linux.
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div>
+              <div class="step-num">02</div>
+              <h3 class="step-title">Multiplayer Menu</h3>
+              <p class="step-desc">
+                From the main menu, click "Multiplayer". Then click "Add Server" (or use "Direct Connection").
+              </p>
+            </div>
+            <div class="step-tip">
+              💡 Name the server "MOON COMMUNITY SMP" for easy access.
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div>
+              <div class="step-num">03</div>
+              <h3 class="step-title">Enter IP & Connect</h3>
+              <p class="step-desc">
+                Paste <code>mooncommunity.mcsh.io</code> into the Server Address field, click "Done", and join the
+                realm!
+              </p>
+            </div>
+            <div class="step-tip">
+              💡 Default port 25565 is used automatically.
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="text-align:center; margin-top:2rem; font-family:var(--font-mono); font-size:0.75rem; color:rgba(216,180,254,0.6);">
+          * Note: MOON COMMUNITY SMP is dedicated to Minecraft Java Edition. Please ensure your launcher is updated.
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DISCORD BANNER SECTION -->
+    <section class="section">
+      <div class="container-narrow">
+        <div class="banner-discord">
+          <div class="badge-pill" style="margin-bottom:1rem; background:rgba(88,28,135,0.7);">
+            <span>💬</span>
+            <span>Official Discord Headquarters</span>
+          </div>
+          <h2 class="section-title" style="text-align:left; font-size:clamp(1.8rem,3.5vw,2.5rem);">
+            JOIN THE <span class="gradient-text-purple">MOON DISCORD</span> COMMUNITY
+          </h2>
+          <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:1.5rem; max-width:620px;">
+            The adventure extends far beyond Minecraft. Connect with fellow SMP players, receive direct server
+            announcements, participate in community giveaways, and obtain prompt staff support through our ticket
+            system.
+          </p>
+
+          <div
+            style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin-bottom:2rem; font-size:0.85rem; color:var(--purple-lighter);">
+            <span>📢 Instant Patch Notes</span>
+            <span>🎫 24/7 Staff Tickets</span>
+            <span>🎙️ Community Voice Hubs</span>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+            <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer"
+              class="minecraft-btn-primary" aria-label="Join MOON COMMUNITY Discord">
+              <span>JOIN OUR DISCORD</span>
+              <span>↗</span>
+            </a>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:rgba(216,180,254,0.7);">
+              Verified Community • Instant Access
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. STORE SECTION -->
+    <section class="section">
+      <div class="container-narrow">
+        <div class="banner-store">
+          <div class="badge-pill" style="margin-bottom:1rem;">
+            <span>🛍️</span>
+            <span>Community Support & Store</span>
+          </div>
+          <h2 class="section-title">
+            SUPPORT <span class="gradient-text-purple">THE REALM</span>
+          </h2>
+          <p class="section-desc" style="max-width:600px; margin:0 auto 1.5rem;">
+            Want to support MOON COMMUNITY SMP hosting, continuous upgrades, and community events? Visit our dedicated
+            store destination on Discord to explore confirmed perks and server contributions.
+          </p>
+
+          <div
+            style="max-width:550px; margin:0 auto 1.75rem; padding:1rem; border-radius:0.75rem; background:rgba(20,16,43,0.6); border:1px solid rgba(168,85,247,0.25); font-family:var(--font-mono); font-size:0.75rem; color:var(--purple-lighter); text-align:left;">
+            ❤️ <strong>Note:</strong> Clicking "VISIT STORE" directs you safely to our official Discord store channel
+            (<code>discord.gg/a5FrYzFpQc</code>) where all legitimate support options are detailed by staff.
+          </div>
+
+          <a href="https://discord.gg/a5FrYzFpQc" target="_blank" rel="noopener noreferrer"
+            class="minecraft-btn-primary" aria-label="Visit official Store on Discord">
+            <span>VISIT STORE</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <div
+              style="width:40px; height:40px; border-radius:0.6rem; overflow:hidden; border:1px solid var(--purple-light);">
+              <img src="icon.png" alt="MOON COMMUNITY Logo" style="width:100%; height:100%; object-fit:cover;" />
+            </div>
+            <div>
+              <div style="font-family:var(--font-display); font-weight:700; color:#ffffff; font-size:1.1rem;">
+                MOON COMMUNITY <span style="font-size:0.75rem; color:var(--purple-light);">SMP</span>
+              </div>
+              <div style="font-family:var(--font-mono); font-size:0.65rem; color:rgba(216,180,254,0.7);">
+                One Community • Infinite Adventures
+              </div>
+            </div>
+          </div>
+          <p
+            style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; max-width:380px; margin-bottom:1.25rem;">
+            A premier Minecraft Survival Multiplayer realm featuring deep crystal progression, fair competitive
+            gameplay, and an active welcoming community.
+          </p>
+          <div
+            style="display:inline-flex; align-items:center; gap:0.5rem; padding:0.4rem 0.75rem; border-radius:0.6rem; background:rgba(20,16,43,0.7); border:1px solid rgba(168,85,247,0.3); font-family:var(--font-mono); font-size:0.75rem;">
+            <span style="color:#ffffff;">mooncommunity.mcsh.io</span>
+            <button type="button" class="btn-copy"
+              style="padding:0.25rem 0.6rem; font-size:0.65rem; min-height:unset; background:var(--purple-primary); border:none; border-radius:0.35rem; color:#fff; cursor:pointer;">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <div
+            style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--purple-light); margin-bottom:1rem;">
+            Navigation
+          </div>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Server Features</a></li>
+            <li><a href="#about">About the Realm</a></li>
+            <li><a href="#rules">SMP Server Rules</a></li>
+            <li><a href="#how-to-join">How to Join (Java)</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect Links -->
+        <div>
+          <div
+            style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--purple-light); margin-bottom:1rem;">
+            Connect & Support
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <a href="https://discord.gg/WbygPDuFqm" target="_blank" rel="noopener noreferrer"
+              style="display:flex; align-items:center; gap:0.75rem; padding:0.75rem 1rem; border-radius:0.75rem; background:rgba(20,16,43,0.5); border:1px solid rgba(168,85,247,0.2); text-decoration:none; color:#ffffff; font-size:0.85rem;">
+              <span>💬</span>
+              <div>
+                <div style="font-weight:600;">Discord Community</div>
+                <div style="font-family:var(--font-mono); font-size:0.7rem; color:rgba(216,180,254,0.6);">
+                  discord.gg/WbygPDuFqm</div>
+              </div>
+            </a>
+            <a href="https://discord.gg/a5FrYzFpQc" target="_blank" rel="noopener noreferrer"
+              style="display:flex; align-items:center; gap:0.75rem; padding:0.75rem 1rem; border-radius:0.75rem; background:rgba(20,16,43,0.5); border:1px solid rgba(168,85,247,0.2); text-decoration:none; color:#ffffff; font-size:0.85rem;">
+              <span>🛍️</span>
+              <div>
+                <div style="font-weight:600;">Official Server Store</div>
+                <div style="font-family:var(--font-mono); font-size:0.7rem; color:rgba(216,180,254,0.6);">
+                  discord.gg/a5FrYzFpQc</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="year">2026</span> MOON COMMUNITY SMP. All rights reserved.
+        </div>
+        <div style="max-width:550px; font-size:0.7rem; text-align:right;">
+          Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. Minecraft is a
+          registered trademark of Mojang Synergies AB.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="scroll-to-top" aria-label="Scroll to top of page">
+    ▲
+  </button>
+
+  <!-- Main JavaScript File (Zero Modules - Pure Native Browser JavaScript) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
