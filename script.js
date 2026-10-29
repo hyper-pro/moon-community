@@ -3,7 +3,7 @@
  * Native Vanilla JavaScript - Runs with direct double click (file://) and GitHub Pages
  */
 
-const SERVER_IP = 'mooncommunity.mcsh.io';
+const SERVER_IP = 'mooncommunity.mcsh.gg';
 
 // Confirmed Rules Database
 const RULES_DATA = [
